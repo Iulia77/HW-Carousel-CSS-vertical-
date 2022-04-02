@@ -1,0 +1,122 @@
+/*Custom Reset*/
+a {
+  text-decoration: none;
+}
+
+/*News section styles*/
+.news {
+  /*border: 1px solid green;*/
+  width: 90%;
+  margin: 5% auto;
+  font-family: Arial;
+}
+
+.news__title {
+  /*border: 1px solid black;*/
+  margin: 1%;
+  padding: 0.5em 5%;
+  font-size: 40px;
+  color: #667;
+  
+}
+
+.news__carousel {
+  /*border: 1px solid black;*/
+  margin: 1%;
+  font-size: 0;
+  
+}
+
+/* Hide Scrollbar*/
+.news__carousel ::-webkit-scrollbar{
+  display: none;
+}
+.news__carousel .arrow {
+  display: block;
+  border: 1px solid grey;
+  width: 3em;
+  height: 3em;
+  text-align: center;
+  line-height: 3em;
+  border-radius: 100%;
+  transform: translateY(0px) translateX(700px);
+  border-color: #fff;
+  box-shadow: 0 0 2px 2px #CCC;
+  color: #667;
+}
+.arrow:hover {
+  color: green;
+  background-color: lightgrey;
+  transition: 0.25s;
+}
+
+
+.carousel__bottom {
+  /*border: 1px solid blue;*/
+  width: 5%;
+  display: inline-block;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+.carousel__content {
+  /*border: 1px solid blue;*/
+  width: 90%;
+  height: 1500px;
+  display: block;
+  font-size: 20px;
+  box-sizing: border-box;
+
+  /*add scroll Y*/
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+.carousel__top {
+  /*border: 1px solid blue;*/
+  width: 5%;
+  display: inline-block;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.content__wrapper {
+  border: 1px dotted lightgreen;
+  height: 3000px;
+  font-size: 0;
+
+}
+
+/*ARTICLE STYLES*/
+.content__article {
+  display: inline-block;
+  width: 100%;
+  border: 1px dotted #999;
+  box-sizing: border-box;
+  font-size: 20px;
+  border-radius: 15px;
+  margin-right: 2%;
+  margin-bottom: 10px;
+  scroll-snap-align: start;
+}
+
+.article__image {
+  width: 100%;
+  object-fit: cover;
+  /*padding: 3%;*/
+  border-radius: 15px 15px 0 0;
+}
+
+.article__title {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0.5em 3%;
+  height: 3em;
+}
+.article__title a {
+  color: #223;
+}
+
+.article__date {
+  padding: 2em 3% 0.5em 3%;
+  color: #889;
+}

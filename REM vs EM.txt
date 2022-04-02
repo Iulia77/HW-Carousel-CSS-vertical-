@@ -1,0 +1,7 @@
+Difference between REM & EM.
+
+EM and REM are the same only EM not relative to HTML root.
+For ex. if we set the font-size in EM it related to EM-parent.
+If the parent has the font-size 10px and we put to the child 2.5em --it will be 25px.
+
+If we put one REM it relative to HTML element (that means 16px, which browser use by default).

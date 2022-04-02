@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <section class="news">
+       
+        <h1 class="title news__title">Latest News</h1>
+        <div class="news__carousel">
+
+            <!-- font-size: 0-->
+            <div class="carousel__top">
+                <a class="arrow carousel__next" href="#a-2">▼</a>
+            </div>
+           
+            <!--Here scroll snapping applied-->
+            <div class="carousel__content">
+
+                <div class="content__wrapper">
+                        <figure id="a-1" class="content__article">
+                            <img class="article__image" src="images/grayscale.png" alt="Article1">
+                            <h2 class="article__title"><a href="#">Short Article1</a></h2>
+                            <figcaption class="article__date">3 hours ago</figcaption>
+                        </figure>
+                        <figure id="a-2" class="content__article">
+                            <img class="article__image" src="images/grayscale2.png" alt="Article2">
+                            <h2 class="article__title"><a href="#">Long Article2 Lorem ipsum dolor sit ametmodi esse, perferend.</a></h2>
+                            <figcaption class="article__date">7 hours ago</figcaption>
+                        </figure>
+                    <div class="carousel__bottom">
+                        <a class="arrow carousel__prev" href="#a-1">▲</a>
+                    </div>
+
+                </div>
+            </div>
+           
+        </div>
+    </section>
+</body>
+</html>
